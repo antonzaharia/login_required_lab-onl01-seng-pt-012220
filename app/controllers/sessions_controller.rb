@@ -10,4 +10,10 @@ class SessionsController < ApplicationController
 
   def secret
   end
+
+  private
+  def current_user
+  end
+
+
 end
