@@ -12,9 +12,5 @@ class SessionsController < ApplicationController
   def create
   end
 
-  def secret
-  end
-
-
 
 end
