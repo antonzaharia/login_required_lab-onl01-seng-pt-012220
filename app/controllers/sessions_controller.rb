@@ -3,10 +3,11 @@ class SessionsController < ApplicationController
   skip_before_action :require_login, only: [:login]
 
   def index
-
+    @name = session[:name]
   end
 
   def login
+
   end
 
   def create
