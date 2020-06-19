@@ -11,9 +11,6 @@ class SessionsController < ApplicationController
   def secret
   end
 
-  private
-  def current_user
-    session[:user_id]
-  end
+
 
 end
