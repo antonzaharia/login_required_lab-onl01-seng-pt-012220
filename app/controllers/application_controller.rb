@@ -9,6 +9,6 @@ class ApplicationController < ActionController::Base
   end
 
   def require_login
-    redirect_to root_path unless session.include? :name
+    redirect_to login_path unless session.include? :name
   end
 end
