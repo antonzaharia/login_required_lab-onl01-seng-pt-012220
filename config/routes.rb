@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   root 'sessions#index'
   get '/login', to: 'sessions#login'
   post '/login', to: 'sessions#create'
-  get '/secret', to: 'secrets#secret'
+  get '/secret', to: 'secrets#show'
 end
