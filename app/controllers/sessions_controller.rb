@@ -6,10 +6,12 @@ class SessionsController < ApplicationController
     @name = session[:name]
   end
 
-  def login
+  def new
   end
 
   def create
+    if params[:name].nil?
+      redirect_to
     session[:name] = params[:name]
   end
 
