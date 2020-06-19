@@ -4,8 +4,4 @@ class SecretsController < ApplicationController
     @secret = "This is the secret."
   end
 
-  private
-  def require_login
-    return head(:forbidden) unless session.include? :name
-  end
 end
