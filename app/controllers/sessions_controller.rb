@@ -17,4 +17,8 @@ class SessionsController < ApplicationController
     end
   end
 
+  def destroy
+    session[:name].destroy
+  end
+
 end
